@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS WEB BUK EPI</title>
+    <link rel="stylesheet" href="warna.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Latihan Materi JavaScript Interaktif</h3>
+        <label for="soal">Pilih Soal: </label>
+        <select id="soal" onchange="tampilForm()">
+            <option value="">-- Pilih Soal--</option>
+            <option value="dolar">1. Konversi dolar ke Rupiah</option>
+            <option value="rata">2. Nilai Rata-rata 3 Mapel</option>
+            <option value="apel">3. Bagi Apel ke keranjang</option>
+            <option value="waktu">4. Hitung Waktu Tempuh</option>
+            <option value="diskon">5. Hitung Diskon</option>
+            <option value="ojol">6. Pendapatan Driver Ojol</option>
+            <option value="bantuan">7. Bantuan Logistik</option>
+            <option value="aritmatika">8. Operasi Aritmatika</option>
+        </select>
+        <div id="form-dolar" class="form">
+            <h4>Konversi Dolar ke Rupiah</h4>
+            <label for="dolar">Masukan Jumlah dolar</label>
+            <input type="number" id="dolar">
+            <button onclick="hitungDolar()">Hitung</button>
+        </div>
+
+        <div id="form-rata" class="form">
+            <h4>Nilai Rata-rata</h4>
+            <label for="rata">MTK</label>
+            <input type="number" id="mtk"><br><br>
+
+            <label for="rata">IPA</label>
+            <input type="number" id="ipa"><br><br>
+
+            <label for="rata">B.INDO</label>
+            <input type="number" id="bindo"><br><br>
+
+            <button onclick="hitungRata()">Hitung</button>
+        </div>
+
+        <div id="form-apel" class="form">
+            <h4>Bagi Apel ke Keranjang</h4>
+            <label for="sisa">Jumlah Apel</label>
+            <input type="number" id="apel"><br><br>
+
+            <label for="sisa">Jumlah Keranjang</label>
+            <input type="number" id="keranjang"><br><br>
+
+            <button onclick="hitungApel()">Hitung</button>
+        </div>
+        <div id="form-waktu" class="form">
+            <h4>Hitung Waktu Tempuh</h4>
+            <label for="jarak">Jarak Tempuh</label>
+            <input type="number" id="jarak"><br><br>
+
+            <label for="waktu">Kecepatan</label>
+            <input type="number" id="waktu"><br>
+
+            <button onclick="hitungWaktu()">Hitung</button>
+        </div>
+        <div id="form-diskon" class="form">
+            <h4>Hitung Diskon</h4>
+            <label for="harga">HARGA</label>
+            <input type="number" id="harga"><br><br>
+
+            <label for="diskon">DISKON</label>
+            <input type="number" id="diskon"><br><br>
+
+            <button onclick="hitungDiskon()">Hitung</button>
+        </div>
+        <div id="form-ojol" class="form">
+            <h4>Pendapatan Driver Ojol</h4>
+            <label>Total Pesanan: </label>
+            <input type="number" id="pesanan"><br><br>
+
+            <label>Persen Luar Negeri (%): </label>
+            <input type="number" id="persen"><br><br>
+
+            <label>Bayaran Luar Negeri (USD): </label>
+            <input type="number" id="usd"><br><br>
+
+            <label>Kurs (Rp per USD): </label>
+            <input type="number" id="kurs"><br><br>
+
+            <label>Bayaran Lokal (Rp): </label>
+            <input type="number" id="lokal"><br><br>
+
+            <button onclick="hitungOjol()">Hitung</button>
+        </div>
+        <div id="form-bantuan" class="form">
+            <h4>Bantuan Logistik</h4>
+            <label for="keluargaTerdampak">Jumlah Keluarga Terdampak:</label><br>
+            <input type="number" id="keluargaTerdampak" required=""><br><br>
+
+            <label for="kebutuhanPerKeluarga">Kebutuhan Per Keluarga (Rp):</label><br>
+            <input type="number" id="kebutuhanPerKeluarga" required=""><br><br>
+
+            <label for="jumlahPaketLogistik">Jumlah Paket Logistik:</label><br>
+            <input type="number" id="jumlahPaketLogistik" required=""><br><br>
+
+            <button onclick="hitungBantuan()">Hitung</button>
+        </div>
+        <div id="form-aritmatika" class="form">
+            <h4>Operasi Aritmatika</h4>
+            <label>Nilai X: </label>
+            <input type="number" id="nilaix"><br><br>
+
+            <label>Nilai Y: </label>
+            <input type="number" id="nilaiy">
+
+            <button onclick="hitung()">Hitung</button>
+            <button onclick="kurang()">Kurang</button>
+            <button onclick="kali()">Kali</button>
+            <button onclick="bagi()">Bagi</button>
+            <button onclick="sisa()">Sisa Bagi</button>
+        </div>
+        <button onclick="resetForm()">Reset</button>
+        <div id="hasil"></div>
+    </div>
+
+
+    <script src="interaktif.js"></script>
+</body>
+
+</html>

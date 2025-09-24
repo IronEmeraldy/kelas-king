@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #238c85;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    background: #4990af;
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+}
+
+select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #2899ce;
+    color: white;
+    cursor: pointer;
+    margin-top: 5PX;
+}
+
+#hasil {
+    margin-top: 15px;
+    padding: 10px;
+    background: #29977c;
+    border-radius: 5px;
+}
+
+.form {
+    display: none;
+    margin-top: 10px;
+}
